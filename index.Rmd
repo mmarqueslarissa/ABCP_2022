@@ -46,7 +46,8 @@ O trabalho se refere ao *gap* de gênero nas atitudes políticas no Brasil no pe
 ### Problema de pesquisa
 --
 
-Um conjunto diferente de padrões de socialização experimentados por homens e mulheres podem influenciar de forma diferenciada os valores centrais, as orientações políticas, as atitudes e o comportamento dos indivíduos.
+Um conjunto distinto de padrões de socialização experimentados por homens e mulheres podem influenciar de forma diferenciada os valores centrais, as orientações políticas e o comportamento (Biroli, 2016). Além disso, a estrutura tradicional de organização social e familiar imputam às mulheres diferentes relações e funções sociais, nessa diferenciação de papéis, o gênero, seria então, um fator importante para a condução de comportamentos e atitudes políticas. 
+
 --
 
 ### Principal pergunta de pesquisa
@@ -54,6 +55,7 @@ Um conjunto diferente de padrões de socialização experimentados por homens e 
 
 Diante disto, um fator individual como o gênero, teria relação com as atitudes políticas e voto no Brasil? Se sim, em quais dimensões?
 --
+---
 
 ### Objetivo principal
 --
@@ -705,6 +707,7 @@ Não relação entre gênero e atitudes
 
 ### Referências
 
+BIROLI, F. Divisão Sexual do Trabalho e Democracia. Dados, v. 59, n. 3, p. 719–754, 2016.
 
 DIEKMAN, A. B.; SCHNEIDER, M. C. A social role theory perspective on gender gaps in political attitudes. Psychology of Women Quarterly, v. 34, n. 4, p. 486–497, 2010.
 
