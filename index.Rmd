@@ -1,6 +1,6 @@
 ---
 title: "**Gender gap no Brasil:**"
-subtitle: "um estudo exploratório sobre as disparidades de gênero entre 2006 a 2018"
+subtitle: "um estudo sobre as disparidades de gênero nas atitudes políticas (2006-2018)"
 author: "Larissa Marques"
 institute: "Universidade de Brasília\nABCP"
 date: "Setembro de 2022"
@@ -29,9 +29,9 @@ library(ggthemes)
 library(plotly)
 library(patchwork)
 
-load("~/ABCP_2022/dados/lapop_abcp.RData")
-load("~/ABCP_2022/dados/eseb_long_presidente.Rda")
-load("~/ABCP_2022/dados/ideologia_2002_2020.Rda")
+load("~/ABCP_2022/lapop_abcp.RData")
+load("~/ABCP_2022/eseb_long_presidente.Rda")
+load("~/ABCP_2022/ideologia_2002_2020.Rda")
 
 ```
 
@@ -46,7 +46,7 @@ O trabalho se refere ao *gap* de gênero nas atitudes políticas no Brasil no pe
 ### Problema de pesquisa
 --
 
-Um conjunto diferente de padrões de socialização experimentados por homens e mulheres podem influenciar de forma diferenciada os valores centrais, as orientações políticas, as atitudes e o comportamento.
+Um conjunto diferente de padrões de socialização experimentados por homens e mulheres podem influenciar de forma diferenciada os valores centrais, as orientações políticas, as atitudes e o comportamento dos indivíduos.
 --
 
 ### Principal pergunta de pesquisa
@@ -58,7 +58,7 @@ Diante disto, um fator individual como o gênero, teria relação com as atitude
 ### Objetivo principal
 --
 
-Explorar as atitudes políticas e comportamentos eleitorais referentes ao grupo do sexo feminino em comparação com o sexo masculino entre 2002 até 2018.
+Explorar as atitudes políticas e comportamentos eleitorais referentes ao grupo do sexo feminino em comparação com o sexo masculino entre 2002 e 2018.
 
 ---
 ### Arcabouço teórico
@@ -74,7 +74,7 @@ Explorar as atitudes políticas e comportamentos eleitorais referentes ao grupo 
     - Diferença ideológica tradicional e diferença ideológica moderna (Inglehart; Norris, 2000)
     
 - *Policy gap* - diferença nas preferências por políticas públicas 
-     - Mulheres demonstram preferência por um grupo de política pública diferente do que apoiado por homens (Diekman; Schneider, 2010)
+     - Mulheres demandam por um conjunto de políticas públicas diferentes daquelas reivindicadas por homens (Diekman; Schneider, 2010).
      
 ---
 
@@ -508,15 +508,14 @@ m = list(
   t = 50,
   pad = 0, x=-1, y= -2,  xanchor='left', yanchor='bottom',   orientation='h')
 
-  ggplotly(a) %>% layout(autosize = F, width = 800, height = 600, margin = m)
+  ggplotly(a) %>% 
+    layout(autosize = F, width = 800, height = 600, margin = m, 
+          annotations = 
+            list(x = 10, y = 5,
+              text = "Elaborado pelos autores com base no LAPOP 2006-2018"))
 
-
-#%>% layout(legend=list(x=-1, y= -2,
-  #                                xanchor='left',
-  #                                yanchor='bottom',
-  #                                orientation='h'))
-  # 
 ```
+
 
 ---
 class: title-slide-custom, center
@@ -668,13 +667,11 @@ simpatia_part_genero %>%
 
 ### Considerações finais
 
-Por meio das análises bivariadas, pode-se considerar que existe uma relacão entre a variável gênero e as atitudes, ou seja, o gênero faz diferença nas atitudes aqui apresentadas, 
+Por meio das análises bivariadas, pode-se considerar que existe uma relação entre a variável gênero e as atitudes, ou seja, o gênero faz diferença no conjunto de *issues*. 
 
-- Essas diferenças geralmente não são consistentes durante toda a análise temporal. 
+Essas diferenças geralmente não são consistentes durante toda a análise temporal. 
 
-
-
-- **As relações entre gênero e atitudes que se mostraram diferentes:**
+**As relações entre gênero e atitudes que se mostraram diferentes:**
 
  -- Mulheres expressam mais concordância com o casamento de homossexuais e o direito desses ocuparem cargos públicos;
  
@@ -683,8 +680,20 @@ Por meio das análises bivariadas, pode-se considerar que existe uma relacão en
  -- Mulheres tendem a expressar menos indetificação partidária do que os homens;
  
  -- Mulheres manifestam menos interesse por política.
- 
+
+
 ---
+
+**As semelhanças:**
+
+Não relação entre gênero e atitudes 
+
+ -- Democracia como melhor forma de governo
+ 
+ -- Confiança nas instituições (com exceção das forças armadas e igrejas)
+ 
+ -- Ideologia (exceto em 2018)
+
 
 ### Próximos passos
 
@@ -692,6 +701,19 @@ Por meio das análises bivariadas, pode-se considerar que existe uma relacão en
  
  -- Analisar as diferenças intragrupo: mulheres em diferentes idades, classes sociais, inserção no mercado de trabalho, religião.
 
+---
 
- 
+### Referências
+
+
+DIEKMAN, A. B.; SCHNEIDER, M. C. A social role theory perspective on gender gaps in political attitudes. Psychology of Women Quarterly, v. 34, n. 4, p. 486–497, 2010.
+
+INGLEHART, R.; NORRIS, P. The developmental theory of the gender gap: Women’s and men’s voting behavior in global perspective. International Political Science Review, v. 21, n. 4, p. 441–463, 2000.
+
+LIZOTTE, M. K. Gender Differences in Public Opinion: Values and Political
+Consequences. [s.l.] Temple University Press, 2021.
+
+MANZA, J.; BROOKS, C. The Gender Gap in U.S. Presidential Elections: When? Why? Implications? American Journal of Sociology, v. 103, n. 5, p. 1235–1266, 1998.
+
+
  
